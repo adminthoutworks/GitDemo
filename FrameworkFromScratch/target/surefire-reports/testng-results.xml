@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="1" ignored="1" total="6" passed="3" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-01T12:08:30 IST" name="All Test Suite" finished-at="2024-03-01T12:08:50 IST" duration-ms="20292">
+    <groups>
+      <group name="PurchaseOrder">
+        <method signature="submitOrderTest.submitProductOrder(java.util.HashMap)[pri:0, instance:org.submitOrderTest@26d9b808]" name="submitProductOrder" class="org.submitOrderTest"/>
+      </group> <!-- PurchaseOrder -->
+      <group name="errorHandling">
+        <method signature="ErrorValidationTest.LoginErrorValidationTest()[pri:0, instance:org.ErrorValidationTest@4a883b15]" name="LoginErrorValidationTest" class="org.ErrorValidationTest"/>
+      </group> <!-- errorHandling -->
+    </groups>
+    <test started-at="2024-03-01T12:08:30 IST" name="/Users/juhikohale/Downloads/FrameworkFromScratch" finished-at="2024-03-01T12:08:50 IST" duration-ms="20292">
+      <class name="org.submitOrderTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:org.submitOrderTest@26d9b808]" started-at="2024-03-01T12:08:40 IST" name="launchApplication" finished-at="2024-03-01T12:08:42 IST" duration-ms="1697" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitProductOrder(java.util.HashMap)[pri:0, instance:org.submitOrderTest@26d9b808]" started-at="2024-03-01T12:08:42 IST" name="submitProductOrder" data-provider="getData" finished-at="2024-03-01T12:08:45 IST" duration-ms="2959" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{prodName=ZARA COAT 3, password=testUser@123, email=john.smith@example.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitProductOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.submitOrderTest@26d9b808]" started-at="2024-03-01T12:08:45 IST" name="tearDown" finished-at="2024-03-01T12:08:45 IST" duration-ms="148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:org.submitOrderTest@26d9b808]" started-at="2024-03-01T12:08:45 IST" name="launchApplication" finished-at="2024-03-01T12:08:47 IST" duration-ms="1843" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitProductOrder(java.util.HashMap)[pri:0, instance:org.submitOrderTest@26d9b808]" started-at="2024-03-01T12:08:47 IST" name="submitProductOrder" data-provider="getData" finished-at="2024-03-01T12:08:50 IST" duration-ms="3194" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{prodName=ADIDAS ORIGINAL, password=testUser@123, email=angela.gross@testuser.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitProductOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.submitOrderTest@26d9b808]" started-at="2024-03-01T12:08:50 IST" name="tearDown" finished-at="2024-03-01T12:08:50 IST" duration-ms="176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.submitOrderTest -->
+      <class name="org.ErrorValidationTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:org.ErrorValidationTest@4a883b15]" started-at="2024-03-01T12:08:30 IST" name="launchApplication" finished-at="2024-03-01T12:08:32 IST" duration-ms="2594" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method retried="true" signature="LoginErrorValidationTest()[pri:0, instance:org.ErrorValidationTest@4a883b15]" started-at="2024-03-01T12:08:32 IST" name="LoginErrorValidationTest" finished-at="2024-03-01T12:08:33 IST" duration-ms="1003" status="SKIP">
+          <exception class="junit.framework.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<......> but was:<...or...>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.ComparisonFailure: expected:<......> but was:<...or...>
+at junit.framework.Assert.assertEquals(Assert.java:81)
+at junit.framework.Assert.assertEquals(Assert.java:87)
+at org.ErrorValidationTest.LoginErrorValidationTest(ErrorValidationTest.java:21)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.ComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginErrorValidationTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.ErrorValidationTest@4a883b15]" started-at="2024-03-01T12:08:33 IST" name="tearDown" finished-at="2024-03-01T12:08:34 IST" duration-ms="219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:org.ErrorValidationTest@4a883b15]" started-at="2024-03-01T12:08:34 IST" name="launchApplication" finished-at="2024-03-01T12:08:36 IST" duration-ms="2065" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="LoginErrorValidationTest()[pri:0, instance:org.ErrorValidationTest@4a883b15]" started-at="2024-03-01T12:08:36 IST" name="LoginErrorValidationTest" finished-at="2024-03-01T12:08:36 IST" duration-ms="283" status="FAIL">
+          <exception class="junit.framework.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<......> but was:<...or...>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.ComparisonFailure: expected:<......> but was:<...or...>
+at junit.framework.Assert.assertEquals(Assert.java:81)
+at junit.framework.Assert.assertEquals(Assert.java:87)
+at org.ErrorValidationTest.LoginErrorValidationTest(ErrorValidationTest.java:21)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.ComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginErrorValidationTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.ErrorValidationTest@4a883b15]" started-at="2024-03-01T12:08:36 IST" name="tearDown" finished-at="2024-03-01T12:08:36 IST" duration-ms="67" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:org.ErrorValidationTest@4a883b15]" started-at="2024-03-01T12:08:36 IST" name="launchApplication" finished-at="2024-03-01T12:08:38 IST" duration-ms="1589" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="productErrorValidation()[pri:0, instance:org.ErrorValidationTest@4a883b15]" started-at="2024-03-01T12:08:38 IST" name="productErrorValidation" finished-at="2024-03-01T12:08:40 IST" duration-ms="2005" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.ErrorValidationTest@4a883b15]" started-at="2024-03-01T12:08:40 IST" name="tearDown" finished-at="2024-03-01T12:08:40 IST" duration-ms="171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.ErrorValidationTest -->
+    </test> <!-- /Users/juhikohale/Downloads/FrameworkFromScratch -->
+  </suite> <!-- All Test Suite -->
+</testng-results>
