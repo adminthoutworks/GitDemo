@@ -32,7 +32,7 @@ public class BaseTest {
     public WebDriver initializeDriver() throws IOException {
         Properties prop=new Properties();
        // File file=new File("GlobalData.properties").getAbsoluteFile();
-        FileInputStream fis=new FileInputStream("/Users/juhikohale/Downloads/FrameworkFromScratch/src/test/java/resources/GlobalData.properties");
+        FileInputStream fis=new FileInputStream("/Users/juhikohale/Documents/AutomationProjects/GitProjDemo/FrameworkFromScratch/src/test/java/resources/GlobalData.properties");
         prop.load(fis);
         String browserName=System.getProperty("browser")!=null ? System.getProperty("browser"):prop.getProperty("browser");
         //String browserName=prop.getProperty("browser");
