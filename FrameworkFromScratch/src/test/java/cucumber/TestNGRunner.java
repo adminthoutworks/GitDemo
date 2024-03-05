@@ -9,7 +9,7 @@ import io.cucumber.testng.CucumberOptions;
         features = "src/test/java/cucumber",
         glue = ".stepdefinations",
         monochrome = true,
-        tags = "@ErrorValidation",
+        //tags = "@ErrorValidation",
         plugin = {"html:target/cucumber.html"}
 )
 public class TestNGRunner extends AbstractTestNGCucumberTests {
